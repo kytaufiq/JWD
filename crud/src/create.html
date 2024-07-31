@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="post" enctype="multipart/form-data">
+      <label for="npm"> NPM</label><br />
+      <input type="text" id="npm" name="npm" /><br />
+      <label for="name">Nama</label><br />
+      <input type="text" id="name" name="name" /><br />
+      <label for="JenisKelaminPria">Jenis Kelamin Pria</label><br />
+      <input
+        type="radio"
+        id="JenisKelaminPria"
+        name="JenisKelamin"
+        value="pria"
+      /><br />
+      <label for="JenisKelaminWanita">Jenis Kelamin Wanita</label><br />
+      <input
+        type="radio"
+        id="JenisKelaminWanita"
+        name="JenisKelamin"
+        value="wanita"
+      /><br />
+      <label for="tanggallahir">Tanggal Lahir</label><br />
+      <input type="date" id="tanggallahir" name="tanggallahir" /><br />
+      <label for="alamat">Alamat</label><br />
+      <input type="text" id="alamat" name="alamat" /><br />
+      <label for="foto">Foto:</label><br />
+      <input type="file" id="foto" name="foto" /><br />
+      <button type="submit">kirim</button>
+    </form>
+  </body>
+</html>
