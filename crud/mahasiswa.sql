@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 01 Agu 2024 pada 04.43
+-- Waktu pembuatan: 04 Agu 2024 pada 17.12
 -- Versi server: 10.4.32-MariaDB
 -- Versi PHP: 8.2.12
 
@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `mahasiswa` (
-  `id` int(11) NOT NULL,
+  `ID` int(11) NOT NULL,
   `npm` varchar(10) NOT NULL,
   `name` varchar(128) NOT NULL,
-  `JenisKelamin` int(11) NOT NULL,
+  `JenisKelamin` tinyint(1) NOT NULL,
   `tanggallahir` date NOT NULL,
   `alamat` text NOT NULL,
   `foto` text NOT NULL
@@ -45,7 +45,7 @@ CREATE TABLE `mahasiswa` (
 -- Indeks untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- AUTO_INCREMENT untuk tabel yang dibuang
@@ -55,7 +55,7 @@ ALTER TABLE `mahasiswa`
 -- AUTO_INCREMENT untuk tabel `mahasiswa`
 --
 ALTER TABLE `mahasiswa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

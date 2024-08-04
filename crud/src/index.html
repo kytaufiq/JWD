@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Taco" />
+    <meta name="keywords" content="Welcome To The Colorbox" />
+    <meta name="author" content="Zaky Taufiqurrahman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Colorbox</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="colorBox" class="h-96 w-96 border-2 border-slate-400"></div>
+    <form action="">
+      <fieldset>
+        <p>
+          <input
+            type="text"
+            name="color"
+            id="color"
+            placeholder="input color"
+          />
+        </p>
+      </fieldset>
+    </form>
+
+    <script>
+      document.getElementById("color").addEventListener("input", function () {
+        let colorValue = this.value;
+        document.getElementById("colorBox").style.backgroundColor = colorValue;
+      });
+    </script>
+  </body>
+</html>
